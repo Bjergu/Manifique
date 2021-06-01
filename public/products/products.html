@@ -1,0 +1,36 @@
+<div>
+    <div class="container">
+        <div class="cont-box cont-shadow">
+            <h1>List of Products</h1>
+            <iframe style="width: 60%;" src="/productlist" title="Product List">
+            </iframe>
+            
+            <h2 style="margin-top: 5%;">Create product</h2>
+            <form action="/create" method="POST">
+                <input type="text" placeholder="name" name="name">
+                <input type="text" placeholder="price" name="price">
+                <button type="submit">Submit</button>
+            </form>
+
+            <h2 style="margin-top: 5%;">Find Product</h2>
+            <form action="/productByName" method="GET">
+                <iframe style="width: 60%;" src="/productByName" title="Product List">
+                </iframe>
+                <input type="text" placeholder="name" name="name">
+                <button type="submit">Submit</button>
+            </form>
+
+            <h2 style="margin-top: 5%;">Delete Product</h2>
+            <form action="/productdel" method="POST">
+                <input type="text" placeholder="name" name="name">
+                <button type="submit">Submit</button>
+            </form>
+
+            <h2 style="margin-top: 5%;">Stats</h2>
+            <iframe style="width: 60%;" src="/stats" title="Stats">
+            </iframe>
+        </div>
+    </div>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script>var socket = io();</script>

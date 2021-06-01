@@ -1,0 +1,12 @@
+.foot{
+    position: relative;
+    width: 100%;
+    background-color:darkslategrey;
+    text-align: center;
+    color: lightgray;
+    padding: 20px;
+}
+#footer-copyright {
+    display: flex;
+    justify-content: center;
+}
